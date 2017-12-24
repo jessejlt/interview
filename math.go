@@ -7,3 +7,11 @@ func intAbs(val int) int {
 	}
 	return val
 }
+
+func intMax(a, b int) int {
+
+	if a < b {
+		return b
+	}
+	return a
+}

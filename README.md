@@ -24,7 +24,7 @@ Output: [24, 12, 8, 6]
 
 > Asked by Google
 
-You're given a list of integers that represent the topology of an island; find the total volume of water your island can hold. 
+You're given a list of integers that represent the topology of an island; find the total volume of water your island can hold.
 
 **Example**
 Input: [1, 3, 5, 1, 7, 2, 3, 6]
@@ -56,8 +56,18 @@ Output: 11
 
 > Asked by Twitch
 
-Find all numeric compliments in a list. 
+Find all numeric compliments in a list.
 
 **Example**
 Input: [2, 1, 3, -2, -1, 2]
 Output: [2, 1]
+
+`stock_prices.go`
+
+> Asked by Interview Cake
+
+You're given a list of integers, each value denoting the price of a stock, and each index the minute after stock opening. Determine the maximum amount of money that could have been made without shorting, meaning you must buy low and sell high.
+
+**Example**
+Input: [10, 12, 8, 14, 13]
+Output: 6
