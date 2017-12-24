@@ -5,13 +5,13 @@ package interview
 // Given a sorted set of integers [1, 2, 3, 4], produce a set of partial
 // products such that each index contains the product of the set, sans the current index.
 //
-// 	**Restrictions**
-// 	1. You cannot use division
-//  2. Solution must be O(n)
+// **Restrictions**
+// 1. You cannot use division
+// 2. Solution must be O(n)
 //
 // **Example**
-// 	Input:  [1, 2, 3, 4]
-//  Output: [24, 12, 8, 6]
+// Input:  [1, 2, 3, 4]
+// Output: [24, 12, 8, 6]
 func PartialProducts(in []int) []int {
 
 	// We'll solve this in two passes.
