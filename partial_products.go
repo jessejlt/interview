@@ -2,7 +2,7 @@ package interview
 
 // PartialProducts returns the set of partial products from a sorted set.
 //
-// Given a sorted set of integers [1, 2, 3, 4], produce a set of partial
+// Given a list of integers [1, 2, 3, 4], produce a set of partial
 // products such that each index contains the product of the set, sans the current index.
 //
 // **Restrictions**

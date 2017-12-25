@@ -6,12 +6,17 @@ import (
 
 func equalIntSlices(a, b []int) bool {
 
+	sort.Ints(a)
+	sort.Ints(b)
+
+	return equalIntSlicesNoSort(a, b)
+}
+
+func equalIntSlicesNoSort(a, b []int) bool {
+
 	if len(a) != len(b) {
 		return false
 	}
-
-	sort.Ints(a)
-	sort.Ints(b)
 
 	for i, v := range a {
 

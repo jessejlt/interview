@@ -8,9 +8,9 @@ Questions
 
 `partial_products.go`
 
-> Asked by Google
+> Asked by Uber
 
-Given a sorted set of integers [1, 2, 3, 4], produce a set of partial products such that each index contains the product of the set, sans the current index.
+Given a list of integers [1, 2, 3, 4], produce a set of partial products such that each index contains the product of the set, sans the current index.
 
 **Restrictions**
 1. You cannot use division
@@ -71,3 +71,13 @@ You're given a list of integers, each value denoting the price of a stock, and e
 **Example**
 Input: [10, 12, 8, 14, 13]
 Output: 6
+
+`interleave_queue_stack.go`
+
+> Asked by Google
+
+Given a stack of N elements, interleave the first half of the stack with the second half reversed using only one other queue.
+
+**Example**
+Input: [1, 2, 3, 4, 5]
+Output: [1, 5, 2, 4, 3]
