@@ -81,3 +81,9 @@ Given a stack of N elements, interleave the first half of the stack with the sec
 **Example**
 Input: [1, 2, 3, 4, 5]
 Output: [1, 5, 2, 4, 3]
+
+`serialize_tree.go`
+
+> Asked by Google
+
+Given the root to a binary tree, implement serialize(root), which serializes the tree into a string, and deserialize(s), which deserializes the string back into the tree.

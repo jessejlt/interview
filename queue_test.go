@@ -32,7 +32,7 @@ func TestQueue(t *testing.T) {
 
 			for i := 0; !q.IsEmpty(); i++ {
 
-				if have, expect := q.Remove(), tt.Input[i]; have != expect {
+				if have, expect := q.Remove().(int), tt.Input[i]; have != expect {
 
 					t.Fatalf("Idx=%d, Have=%d, Expect=%d", i, have, expect)
 				}

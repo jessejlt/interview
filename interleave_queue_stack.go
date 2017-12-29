@@ -35,7 +35,7 @@ func InterleaveHalfs(values *Stack) []int {
 
 		if !q.IsEmpty() {
 
-			v := q.Remove()
+			v := q.Remove().(int)
 			output[i] = v
 			i++
 		}

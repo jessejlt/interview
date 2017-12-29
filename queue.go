@@ -13,12 +13,12 @@ type Queue struct {
 }
 
 type queueNode struct {
-	data int
+	data interface{}
 	next *queueNode
 }
 
 // Add an item to the end of the list
-func (q *Queue) Add(data int) {
+func (q *Queue) Add(data interface{}) {
 
 	if q == nil {
 		q = NewQueue()
@@ -38,7 +38,7 @@ func (q *Queue) Add(data int) {
 }
 
 // Remove the first item in the list
-func (q *Queue) Remove() int {
+func (q *Queue) Remove() interface{} {
 
 	if q == nil {
 		q = NewQueue()
@@ -55,7 +55,7 @@ func (q *Queue) Remove() int {
 }
 
 // Peek returns the top of the queue
-func (q *Queue) Peek() int {
+func (q *Queue) Peek() interface{} {
 
 	if q == nil {
 		q = NewQueue()
