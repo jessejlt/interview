@@ -103,3 +103,13 @@ Given this matrix, a start coordinate, and an end coordinate, return the minimum
 [f, f, f, f]]
 
 and start = (3, 0) (bottom left) and end = (0, 0) (top left), the minimum number of steps required to reach the end is 7, since we would need to go through (1, 2) because there is a wall everywhere else on the second row.
+
+`remove_kth_element.go`
+
+> Asked by Google
+
+Given a singly linked list and an integer k, remove the kth last element from the list. k is guaranteed to be smaller than the length of the list.
+
+The list is very long, so making more than one pass is prohibitively expensive.
+
+Do this in constant space and in one pass.
