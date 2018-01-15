@@ -1,15 +1,9 @@
 package interview
 
 // NewStack creates a Stack
-func NewStack(data []int) *Stack {
+func NewStack() *Stack {
 
-	s := new(Stack)
-	for _, value := range data {
-
-		s.Push(value)
-	}
-
-	return s
+	return new(Stack)
 }
 
 // Stack is an integer Stack
@@ -18,15 +12,15 @@ type Stack struct {
 }
 
 type stackNode struct {
-	data int
+	data interface{}
 	next *stackNode
 }
 
 // Pop removes the top element
-func (s *Stack) Pop() int {
+func (s *Stack) Pop() interface{} {
 
 	if s == nil {
-		s = NewStack(nil)
+		s = NewStack()
 	}
 	if s.top == nil {
 		return -1
@@ -39,10 +33,10 @@ func (s *Stack) Pop() int {
 }
 
 // Push into the top element
-func (s *Stack) Push(data int) {
+func (s *Stack) Push(data interface{}) {
 
 	if s == nil {
-		s = NewStack(nil)
+		s = NewStack()
 	}
 
 	node := &stackNode{data: data}
@@ -56,10 +50,10 @@ func (s *Stack) Push(data int) {
 }
 
 // Peek returns the top element
-func (s *Stack) Peek() int {
+func (s *Stack) Peek() interface{} {
 
 	if s == nil {
-		s = NewStack(nil)
+		s = NewStack()
 	}
 
 	if s.top == nil {
@@ -73,7 +67,7 @@ func (s *Stack) Peek() int {
 func (s *Stack) IsEmpty() bool {
 
 	if s == nil {
-		s = NewStack(nil)
+		s = NewStack()
 	}
 
 	return s.top == nil

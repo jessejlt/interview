@@ -12,7 +12,7 @@ func InterleaveHalfs(values *Stack) []int {
 
 		output = append(
 			output,
-			values.Pop(),
+			values.Pop().(int),
 		)
 	}
 
@@ -42,7 +42,7 @@ func InterleaveHalfs(values *Stack) []int {
 
 		if !values.IsEmpty() {
 
-			v := values.Pop()
+			v := values.Pop().(int)
 			output[i] = v
 		}
 	}
